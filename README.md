@@ -23,7 +23,7 @@ jobs:
   build:
     runs-on: ubuntu-18.04
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4.1.4
 
       # ( Build to ./dist or other directory... )
 
