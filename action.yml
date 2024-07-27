@@ -1,55 +1,55 @@
-name: 'Netlify Actions'
-description: 'Netlify deploy from GitHub Actions'
-author: 'Ryo Ota'
+name: "Netlify Actions"
+description: "Netlify deploy from GitHub Actions"
+author: "Ryo Ota"
 inputs:
-  publish-dir:
-    description: Publish directory
-    required: true
-  functions-dir:
-    description: Functions directory
-    required: false
-  deploy-message:
-    description: Custom deploy message for Netlify
-    required: false
-  github-token:
-    description: GitHub token
-    required: false
-  production-branch:
-      description: Production branch
-      required: false
-  production-deploy:
-      description: Indicate wether to deploy production build
-      required: false
-  enable-pull-request-comment:
-      description: Enable pull request comment
-      required: false
-  enable-commit-comment:
-    description: Enable commit comment
-    required: false
-  enable-commit-status:
-    description: Enable GitHub commit status
-    required: false
-  overwrites-pull-request-comment:
-    description: Overwrites pull request comment
-    required: false
-  netlify-config-path:
-    description: Path to netlify.toml
-    required: false
-  alias:
-    description: Specifies the prefix for the deployment URL
-    required: false
-  github-deployment-environment:
-    description: Environment name of GitHub Deployments
-    required: false
-  github-deployment-description:
-    description: Description of the GitHub Deployment
-    required: false
-  fails-without-credentials:
-    description: Fails if no credentials provided
-    required: false
+    publish-dir:
+        description: Publish directory
+        required: true
+    functions-dir:
+        description: Functions directory
+        required: false
+    deploy-message:
+        description: Custom deploy message for Netlify
+        required: false
+    github-token:
+        description: GitHub token
+        required: false
+    production-branch:
+        description: Production branch
+        required: false
+    production-deploy:
+        description: Indicate wether to deploy production build
+        required: false
+    enable-pull-request-comment:
+        description: Enable pull request comment
+        required: false
+    enable-commit-comment:
+        description: Enable commit comment
+        required: false
+    enable-commit-status:
+        description: Enable GitHub commit status
+        required: false
+    overwrites-pull-request-comment:
+        description: Overwrites pull request comment
+        required: false
+    netlify-config-path:
+        description: Path to netlify.toml
+        required: false
+    alias:
+        description: Specifies the prefix for the deployment URL
+        required: false
+    github-deployment-environment:
+        description: Environment name of GitHub Deployments
+        required: false
+    github-deployment-description:
+        description: Description of the GitHub Deployment
+        required: false
+    fails-without-credentials:
+        description: Fails if no credentials provided
+        required: false
 outputs:
-  deploy-url:
-    description: Deploy URL
+    deploy-url:
+        description: Deploy URL
 runs:
-  using: 'node16'
-  main: 'dist/index.js'
+    using: "node16"
+    main: "dist/index.js"
