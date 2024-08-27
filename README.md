@@ -12,7 +12,7 @@ Deploy URLs are commented on your pull requests and commit comments!
 
 GitHub Deployments are also supported!
 
-## Usage
+## 🛠️ Usage
 
 ```yaml
 # .github/workflows/netlify.yml
