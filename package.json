@@ -1,14 +1,14 @@
 {
 	"dependencies": {
-		"@actions/core": "^1.11.1",
-		"@actions/github": "^6.0.0",
-		"netlify": "^13.1.21"
+		"@actions/core": "1.11.1",
+		"@actions/github": "6.0.0",
+		"netlify": "13.1.21"
 	},
 	"description": "GitHub Actions for Netlify",
 	"devDependencies": {
-		"@types/node": "^22.7.5",
-		"@vercel/ncc": "^0.38.2",
-		"js-yaml": "^4.1.0"
+		"@types/node": "22.7.5",
+		"@vercel/ncc": "0.38.2",
+		"js-yaml": "4.1.0"
 	},
 	"main": "lib/main.js",
 	"name": "actions-netlify",
