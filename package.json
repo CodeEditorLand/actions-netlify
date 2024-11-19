@@ -7,7 +7,7 @@
 	"description": "GitHub Actions for Netlify",
 	"devDependencies": {
 		"@types/node": "22.9.0",
-		"@vercel/ncc": "0.38.2",
+		"@vercel/ncc": "0.38.3",
 		"js-yaml": "4.1.0"
 	},
 	"main": "lib/main.js",
