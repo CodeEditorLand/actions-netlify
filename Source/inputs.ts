@@ -3,6 +3,7 @@ import * as core from "@actions/core";
 // Why use function rather than raw string? => Inputs should be lazy evaluated.
 export interface Inputs {
 	publishDir(): string;
+
 	functionsDir(): string | undefined;
 	deployMessage(): string | undefined;
 	productionBranch(): string | undefined;
