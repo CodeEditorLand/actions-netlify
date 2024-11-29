@@ -5,18 +5,31 @@ export interface Inputs {
 	publishDir(): string;
 
 	functionsDir(): string | undefined;
+
 	deployMessage(): string | undefined;
+
 	productionBranch(): string | undefined;
+
 	productionDeploy(): boolean;
+
 	enablePullRequestComment(): boolean;
+
 	enableCommitComment(): boolean;
+
 	enableCommitStatus(): boolean;
+
 	githubToken(): string;
+
 	overwritesPullRequestComment(): boolean;
+
 	netlifyConfigPath(): string | undefined;
+
 	alias(): string | undefined;
+
 	githubDeploymentEnvironment(): string | undefined;
+
 	githubDeploymentDescription(): string | undefined;
+
 	failsWithoutCredentials(): boolean;
 }
 

@@ -37,6 +37,7 @@ async function findIssueComment(
 			return comment.id;
 		}
 	}
+
 	return undefined;
 }
 
@@ -57,6 +58,7 @@ async function createGitHubDeployment(
 		description,
 		required_contexts: [],
 	});
+
 	await githubClient.rest.repos.createDeploymentStatus({
 		state: "success",
 		environment_url: environmentUrl,
@@ -79,10 +81,12 @@ export async function run(inputs: Inputs): Promise<void> {
 			if (inputs.failsWithoutCredentials()) {
 				throw new Error(errorMessage);
 			}
+
 			process.stderr.write(errorMessage);
 
 			return;
 		}
+
 		const dir = inputs.publishDir();
 
 		const functionsDir: string | undefined = inputs.functionsDir();
@@ -143,6 +147,7 @@ export async function run(inputs: Inputs): Promise<void> {
 		const deployUrl = productionDeploy
 			? deploy.deploy.ssl_url
 			: deploy.deploy.deploy_ssl_url;
+
 		core.setOutput("deploy-url", deployUrl);
 
 		// Get GitHub token
@@ -151,6 +156,7 @@ export async function run(inputs: Inputs): Promise<void> {
 		if (githubToken === "") {
 			return;
 		}
+
 		const markdownComment = `${getCommentIdentifier(siteId)}\n${message}`;
 
 		// Create GitHub client
@@ -238,6 +244,7 @@ export async function run(inputs: Inputs): Promise<void> {
 				// (base: https://github.community/t/github-sha-isnt-the-value-expected/17903/2)
 				const sha =
 					context.payload.pull_request?.head.sha ?? context.sha;
+
 				await githubClient.rest.repos.createCommitStatus({
 					owner: context.repo.owner,
 					repo: context.repo.repo,
