@@ -10,7 +10,7 @@
 	"dependencies": {
 		"@actions/core": "1.11.1",
 		"@actions/github": "6.0.0",
-		"netlify": "13.2.0"
+		"netlify": "13.2.1"
 	},
 	"devDependencies": {
 		"@types/node": "22.10.5",
