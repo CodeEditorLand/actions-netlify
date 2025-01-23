@@ -10,10 +10,10 @@
 	"dependencies": {
 		"@actions/core": "1.11.1",
 		"@actions/github": "6.0.0",
-		"netlify": "13.3.0"
+		"netlify": "13.3.2"
 	},
 	"devDependencies": {
-		"@types/node": "22.10.7",
+		"@types/node": "22.10.9",
 		"@vercel/ncc": "0.38.3",
 		"js-yaml": "4.1.0"
 	}
