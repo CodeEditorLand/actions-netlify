@@ -13,7 +13,7 @@
 		"netlify": "13.3.3"
 	},
 	"devDependencies": {
-		"@types/node": "22.13.1",
+		"@types/node": "22.13.4",
 		"@vercel/ncc": "0.38.3",
 		"js-yaml": "4.1.0"
 	}
